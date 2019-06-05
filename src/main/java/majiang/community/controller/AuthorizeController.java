@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * * +----------------------------------------------------------------------
  * * | 广西西途比网络科技有限公司 www.c2b666.com
  * * +----------------------------------------------------------------------
- * * | 功能描述: 请输入描述
+ * * | 功能描述: 第三方 gitHub 登录
  * * +----------------------------------------------------------------------
  * * | 时　　间: 2019/6/4 10:50
  * * +----------------------------------------------------------------------
@@ -55,6 +55,7 @@ public class AuthorizeController {
 //        System.out.println(githubUserDTO.getId());
 
         if (githubUserDTO != null) {
+
             //  登录成功，写 cookie 和 session
             request.getSession().setAttribute("user", githubUserDTO);
 
